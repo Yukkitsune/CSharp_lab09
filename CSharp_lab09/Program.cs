@@ -61,7 +61,7 @@ class Market
     static async Task GetData(HttpClient client,string quote, string startDate, string endDate,string output )
     {
 
-        string apiKey = "bWROMnE5ZmVGVFRjclI0c01qNzNFaUVzYWNGbmc4enIwcmJ6Z0ZXZkVHbz0";
+        string apiKey = "";
         string URL = $"https://api.marketdata.app/v1/stocks/candles/D/{quote}/?from={startDate}&to={endDate}&token={apiKey}";
         HttpClient cl = new HttpClient();
 
